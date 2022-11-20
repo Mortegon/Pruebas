@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="style_registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="registro-izquierda">
+            <div class="registro-header">
+                <h1>Te damos la bienvenida a nuestra aplicación</h1>
+                <p>Por favor registrate para acceder a la plataforma</p>
+            </div>
+            <form class="registro-formulario" id="registro_formulario">
+                <div class="formulario-contenido">
+                    <div class="form-item" id="form_nombre">
+                        <label for="nombre" class="formulario-label">Ingresa tus nombres</label>
+                        <input type="text" id="nombre" name="nombre" class="formulario-input">
+                        <p class="input_error">Tu nombre no puede contener números o símbolos y tienen que ser mayor a 2 caracteres</p>
+                    </div>
+                    <div class="form-item" id="form_apellido">
+                        <label for="apellido" class="formulario-label">Ingresa tus apellidos</label>
+                        <input type="text" id="apellido" name="apellido" class="formulario-input">
+                        <p class="input_error">Tus apellidos no pueden contener números o símbolos y tienen que ser mayores a 2 caracteres</p>
+                    </div>
+                    <div class="form-item" id="form_correo">
+                        <label for="correo" class="formulario-label">Ingresa tu Email</label>
+                        <input type="email" id="correo" name="correo" class="formulario-input">
+                        <p class="input_error">Correo electrónico inválido</p>
+                    </div>
+                    <div class="form-item" id="form_password">
+                        <label for="password" class="formulario-label">Ingresa tu contraseña</label>
+                        <span class="icon-eye"><i class="fa-solid fa-eye"></i></span>
+                        <input type="password" id="password" name="password" class="formulario-input">
+                        <p class="input_error">Tu contraseña debe tener de 12 a 18 caracteres, una mayúscula, una minúscula, un dígito y un caracter especial</p>
+                    </div>
+                    <button type="submit">Registrate</button>
+                    <div class="form-mensaje" id="form-mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i><b> Error: debes llenar todos los campos</b></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="registro-derecha">
+            <img src="Images/register.jpg" alt="">
+        </div>
+    </div>
+
+<script src="registro.js"></script>    
+</body>
+</html>
